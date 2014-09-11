@@ -1,8 +1,12 @@
+<%@ page import="com.newrelic.api.agent.NewRelic" %>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta name="layout" content="main"/>
 		<title>Welcome to Grails</title>
+
+    ${NewRelic.getBrowserTimingHeader()}
+
 		<style type="text/css" media="screen">
 			#status {
 				background-color: #eee;
